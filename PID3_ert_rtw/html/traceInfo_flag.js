@@ -1,0 +1,34 @@
+function TraceInfoFlag() {
+    this.traceFlag = new Array();
+    this.traceFlag["PID3.cpp:113c33"]=1;
+    this.traceFlag["PID3.cpp:113c54"]=1;
+    this.traceFlag["PID3.cpp:120c37"]=1;
+    this.traceFlag["PID3.cpp:120c63"]=1;
+    this.traceFlag["PID3.cpp:127c37"]=1;
+    this.traceFlag["PID3.cpp:127c48"]=1;
+    this.traceFlag["PID3.cpp:127c71"]=1;
+    this.traceFlag["PID3.cpp:140c35"]=1;
+    this.traceFlag["PID3.cpp:140c58"]=1;
+    this.traceFlag["PID3.cpp:147c41"]=1;
+    this.traceFlag["PID3.cpp:147c69"]=1;
+    this.traceFlag["PID3.cpp:155c37"]=1;
+    this.traceFlag["PID3.cpp:155c49"]=1;
+    this.traceFlag["PID3.cpp:155c72"]=1;
+    this.traceFlag["PID3.cpp:161c36"]=1;
+    this.traceFlag["PID3.cpp:171c35"]=1;
+    this.traceFlag["PID3.cpp:171c59"]=1;
+    this.traceFlag["PID3.cpp:178c40"]=1;
+    this.traceFlag["PID3.cpp:178c68"]=1;
+    this.traceFlag["PID3.cpp:186c37"]=1;
+    this.traceFlag["PID3.cpp:186c49"]=1;
+    this.traceFlag["PID3.cpp:186c72"]=1;
+    this.traceFlag["PID3.cpp:198c22"]=1;
+    this.traceFlag["PID3.cpp:198c33"]=1;
+    this.traceFlag["PID3.cpp:198c60"]=1;
+    this.traceFlag["PID3.cpp:218c39"]=1;
+    this.traceFlag["PID3.cpp:218c66"]=1;
+    this.traceFlag["PID3.cpp:239c22"]=1;
+    this.traceFlag["PID3.cpp:239c34"]=1;
+    this.traceFlag["PID3.cpp:239c62"]=1;
+}
+top.TraceInfoFlag.instance = new TraceInfoFlag();

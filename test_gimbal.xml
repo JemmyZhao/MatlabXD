@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="06/21/17||16:49:24" using="SimMechanics Link Version 4.7" from="SolidWorks 25.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="test_gimbal" uid="test_gimbal" version="178">
+<AssemblyFile name="test_gimbal.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="groud-3" uid="groud-3" entityUid="groud*:*默认">
+<Transform>
+<Rotation>-0.039865594681094192 0.1705639937173854 0.98453982063088663 0.37904638427308446 0.91425571223777224 -0.14303961412876146 -0.92451856278293509 0.36748389990281138 -0.10109901276469815</Rotation>
+<Translation>0.11952964043095321 -0.16479991166215377 0.1217441915104764</Translation>
+</Transform>
+</Instance>
+<Instance name="roll-1" uid="roll-1" entityUid="roll*:*默认">
+<Transform>
+<Rotation>0.039524332430917984 0.37149107586127195 0.9275948510536941 0.99856077684198308 -0.048364457783431167 -0.023178744056784089 0.036251925447146727 0.92717595944823195 -0.37286799020916922</Rotation>
+<Translation>0.093291876283216946 -0.37324582135503026 -0.035069660215678311</Translation>
+</Transform>
+</Instance>
+<Instance name="groud-2" uid="groud-2" grounded="true" entityUid="groud*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.05227514648583638 0.0054116424372255001 0.032400691853889663</Translation>
+</Transform>
+</Instance>
+<Instance name="test_yaw-2" uid="test_yaw-2" entityUid="test_yaw*:*默认">
+<Transform>
+<Rotation>0 0.9947690667760728 0.10214941891886442 -1 0 0 0 -0.10214941891886442 0.9947690667760728</Rotation>
+<Translation>0.027405919816434466 -0.38978784936837729 0.034954427326861284</Translation>
+</Transform>
+</Instance>
+<Instance name="test_roll-2" uid="test_roll-2" entityUid="test_roll*:*默认">
+<Transform>
+<Rotation>-0.039865594681103358 0.98453982063088619 -0.17056399371738598 0.37904638427308607 -0.14303961412875846 -0.91425571223777236 -0.92451856278293398 -0.10109901276470698 -0.36748389990281144</Rotation>
+<Translation>0.067043243795299648 -0.39193344358030902 0.030884206662419186</Translation>
+</Transform>
+</Instance>
+<Instance name="pitch-1" uid="pitch-1" entityUid="pitch*:*默认">
+<Transform>
+<Rotation>-0.89018732027859226 0.37149107586127239 0.26374403381053657 0.26513300876469925 -0.048364457783431347 0.96299811364648735 0.37050104247977084 0.92717595944823183 -0.055441119601374461</Rotation>
+<Translation>0.036064449549493102 -0.37022262505278464 -0.011372196151954742</Translation>
+</Transform>
+</Instance>
+<Instance name="yaw-1" uid="yaw-1" entityUid="yaw*:*默认">
+<Transform>
+<Rotation>-0.33237887469851518 0.17056399371738534 0.92759485105369377 0.40447402693442946 0.91425571223777236 -0.023178744056784245 -0.85201235037386347 0.36748389990281105 -0.37286799020916989</Rotation>
+<Translation>0.084450088507283638 -0.4277744583994697 -0.03507962861496064</Translation>
+</Transform>
+</Instance>
+<Instance name="test_pitch-1" uid="test_pitch-1" entityUid="test_pitch*:*默认">
+<Transform>
+<Rotation>-0.1422913834588754 0.98453982063088619 0.10214941891886446 -0.98971696398005404 -0.14303961412875929 0 0.014611413465631384 -0.10109901276470523 0.99476906677607257</Rotation>
+<Translation>0.03750704917637248 -0.38764225515644596 0.033917177045360306</Translation>
+</Transform>
+</Instance>
+<Instance name="load-1" uid="load-1" entityUid="load*:*默认">
+<Transform>
+<Rotation>0.37149107586127217 0.26374403381053713 -0.89018732027859215 -0.048364457783431319 0.96299811364648713 0.26513300876469975 0.92717595944823172 -0.055441119601374628 0.37050104247977067</Rotation>
+<Translation>0.047354120129724564 -0.46865202630217534 -0.018827923535630342</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>groud-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>test_yaw-2</Uid>
+</InstancePath>
+<Position>-0.39519949180560277 0.025000000000000008 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>groud-2</Uid>
+</InstancePath>
+<Position>0 0.029999999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_yaw-2</Uid>
+</InstancePath>
+<Position>-0.39519949180560277 0.025000000000000008 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_yaw-2</Uid>
+</InstancePath>
+<Position>0 0.025000000000000022 -0.58700000000000019</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_pitch-1</Uid>
+</InstancePath>
+<Position>0 0.014999999999999986 0.39205395181857261</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>test_yaw-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>test_pitch-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>test_pitch-1</Uid>
+</InstancePath>
+<Position>0 0.029999999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>test_roll-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_pitch-1</Uid>
+</InstancePath>
+<Position>0 0.029999999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_roll-2</Uid>
+</InstancePath>
+<Position>0 0.020000000000000018 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_roll-2</Uid>
+</InstancePath>
+<Position>0 0.010000000000000009 -0.28000000000000008</Position>
+<Axis>2.7755575615628914e-016 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>groud-3</Uid>
+</InstancePath>
+<Position>0 0.03000000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>test_roll-2</Uid>
+</InstancePath>
+<Position>0.015000000000000069 0.010000000000000009 -0.3000000000000001</Position>
+<Axis>-2.7755575615628914e-016 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>groud-3</Uid>
+</InstancePath>
+<Position>0.014999999999999986 0.01999999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>test_roll-2</Uid>
+</InstancePath>
+<Position>0 0.010000000000000009 -0.28000000000000008</Position>
+<Axis>-2.7755575615628914e-016 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>groud-3</Uid>
+</InstancePath>
+<Position>0 0.03000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>groud-3</Uid>
+</InstancePath>
+<Position>0 0.03000000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>yaw-1</Uid>
+</InstancePath>
+<Position>-0.038909159672899984 1.0162338657027998 -0.032030390597699979</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>groud-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>yaw-1</Uid>
+</InstancePath>
+<Position>-0.0069091596729000393 0.30403951901900006 -0.11903039059769999</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>yaw-1</Uid>
+</InstancePath>
+<Position>-0.038909159672896071 0.062039519018963929 -0.12409641600145899</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>roll-1</Uid>
+</InstancePath>
+<Position>-0.070909159672900013 0.18539448432719999 -0.1310303905977</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>yaw-1</Uid>
+</InstancePath>
+<Position>-0.03890915967290004 0.03203951901900004 0.52028895609530001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>roll-1</Uid>
+</InstancePath>
+<Position>-0.038909159672899929 0.047175725300999984 0.52047493516980015</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>roll-1</Uid>
+</InstancePath>
+<Position>-0.038909159672901927 0.17324175070475903 -0.062030390597703919</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pitch-1</Uid>
+</InstancePath>
+<Position>-0.070909159672900013 0.17267572530100006 -0.097630390597700067</Position>
+<Axis>-1.1102230246251565e-016 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>roll-1</Uid>
+</InstancePath>
+<Position>-0.038909159672899984 1.1671810510685003 -0.032030390597700048</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pitch-1</Uid>
+</InstancePath>
+<Position>-0.038909159672900123 1.1671810510685001 -0.032030390597700076</Position>
+<Axis>1.1102230246251565e-016 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pitch-1</Uid>
+</InstancePath>
+<Position>-0.070909159672900041 0.15567572530100005 -0.09139639059770005</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>load-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合11">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>pitch-1</Uid>
+</InstancePath>
+<Position>-0.038909159672899984 0.14017572530100003 -0.091396390597699995</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>load-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.1102230246251565e-016 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合12">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>pitch-1</Uid>
+</InstancePath>
+<Position>-0.038909159672899984 0.020175725301000008 -0.091396390597699995</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>load-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.1102230246251565e-016 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="距离1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>load-1</Uid>
+</InstancePath>
+<Position>0.074999999999999969 0.12 -0.044999999999999984</Position>
+<Axis>1 0 -1.6653345369377348e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pitch-1</Uid>
+</InstancePath>
+<Position>-0.070909159672900041 0.15704172530100002 -0.090030390597700072</Position>
+<Axis>1.1102230246251565e-016 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="groud" uid="groud*:*默认" version="150">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="groud.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.744656095436107</Mass>
+<CenterOfMass>0 0.014834199182049299 0</CenterOfMass>
+<Inertia>0.00024852962199765178 0.00038388524366097864 0.00024575166872905808 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="groud_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Specular r="0.44705882352941173" g="0.4568627450980392" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="load" uid="load*:*默认" version="168">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="load.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1</Mass>
+<CenterOfMass>0 0.059999999999999991 0</CenterOfMass>
+<Inertia>0.0018597918325794678 0.0025155241310829001 0.0030440569909542664 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="load_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pitch" uid="pitch*:*默认" version="507">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pitch.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.14119942872953756</Mass>
+<CenterOfMass>-0.040309869373451358 0.13787074734557397 -0.065780666800490953</CenterOfMass>
+<Inertia>0.00040904449997922231 0.00017699414095993796 0.00035083879275246997 -0.00010685964081398967 1.9282234630967597e-006 4.2232275028540893e-006</Inertia>
+</MassProperties>
+<GeometryFile name="pitch_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="roll" uid="roll*:*默认" version="189">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="roll.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.31793228993235328</Mass>
+<CenterOfMass>-0.040197559372662034 0.15139080125157062 -0.075482343271011415</CenterOfMass>
+<Inertia>0.001698578771208184 0.00076633943967936333 0.0011618382457192142 -0.00058952899840909799 -2.0442997774547614e-005 -2.9224073948839538e-005</Inertia>
+</MassProperties>
+<GeometryFile name="roll_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="test_pitch" uid="test_pitch*:*默认" version="193">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="test_pitch.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.2542558482698221</Mass>
+<CenterOfMass>0 0.015000000000000003 1.344504694536422e-007</CenterOfMass>
+<Inertia>0.19732397689125084 0.35431898035563419 0.1575858554969192 0 0 3.9657370023979464e-009</Inertia>
+</MassProperties>
+<GeometryFile name="test_pitch_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="test_roll" uid="test_roll*:*默认" version="179">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="test_roll.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.20450614916336574</Mass>
+<CenterOfMass>-1.0328761560106988e-008 0.010226639389930648 -0.3091273102915198</CenterOfMass>
+<Inertia>7.1504553359544803e-005 0.00047713713336271186 0.00044894842380562412 -4.4644966825853435e-007 2.6790546083628788e-011 -3.8747955667632618e-011</Inertia>
+</MassProperties>
+<GeometryFile name="test_roll_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="test_yaw" uid="test_yaw*:*默认" version="174">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="test_yaw.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.613673260827966</Mass>
+<CenterOfMass>-0.24889867877972852 0.025000221887150592 -3.6630926726364302e-007</CenterOfMass>
+<Inertia>0.10408122099303996 0.12162283981515096 0.018191454171364006 -1.740744498014553e-009 7.8222601983178188e-008 -8.3617721522158008e-008</Inertia>
+</MassProperties>
+<GeometryFile name="test_yaw_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="yaw" uid="yaw*:*默认" version="197">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="yaw.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.4220224652422469</Mass>
+<CenterOfMass>-0.039730395407906953 0.14752034305623418 -0.12535459490281445</CenterOfMass>
+<Inertia>0.0061092729904538585 0.00092066918616811341 0.0055106384164735267 -0.0012829600428246124 2.1673573275640071e-005 5.2078346871971852e-005</Inertia>
+</MassProperties>
+<GeometryFile name="yaw_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>
